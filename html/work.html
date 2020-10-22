@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../index.css">
+    </head>
+
+   
+    <body>
+        <nav>
+            <div class="logo">
+             <a href="../index.html" class="logo-text">Carter Olson </a>
+            </div>
+            <div class='categories'>
+             <a href="./work.html" >Projects</a>
+             <a href="https://github.com/berbaroovez/" >Github</a>
+             <a href="#" >Contact</a>
+            </div>
+        </nav>
+       <main>
+            <h1>Projects</h1>
+
+
+            <div class="project-post">
+                <div class="project-title">Nuzlocke Tracker</div>
+                <ul class= "project-langs">
+                    <li>React</li>
+                    <li>Firebase</li>
+                    <li>OpenID</li>
+                </ul>
+                <p class= "project-text">In my journey to create websites to help creators grow I came up with the Nuzlocke Tracker. 
+                    A Nuzlocke is when someone attempts to complete a entire game of pokemon but theres a "catch" which is if you pokemon dies in battle it has to be released back into the wild.
+                    Sounds hard right? Well it ceertaintly is and it might take a streamer/creator many attempts to beat the game and even many months. So viewers need a way to keep up with the runs even if they miss a video or stream.
+                    So I came up with a React based website that allows fans and streamers to sign up and tracker their own runs. Each run has a publically displaying page the only the streamer or their editors can change.
+                    Each page display the nesecarry infomation such as which pokemon is caught, if it was named after a chatter, if the pokemon has died, and the total number of attempts for that game. 
+                    The users only way of signing in is with their twitch account which was accomplished with a custom authentication token with firebase through Twitch's OpenID.
+                </p>
+                <hr align="left">
+            </div>
+            
+            <div class="project-post">
+                <div class="project-title"><a href="https://www.emotefinder.com">Emote Picker</a></div>
+                <ul class= "project-langs">
+                    <li>React</li>
+                    <li>API</li>
+                </ul>
+                <p class= "project-text">For my first live React project I attempted to recreate a website that I use a lot when watching twitch streams. That websiet was this
+                    <a href="https://astrid.slmn.io/twitch/">twitch thirdparty emote finder</a> created by the talented slmn. The idea behind the website is that their is two third party add ons 
+                    for twitch named BetterTTV and FrankerFaceZ. These two websites allow streamers to add more static and also animated emotes for their chat to use. Some streamers can have up to 100
+                    additional emotes on their stream through these services. But there was a problem... You couldnt find out which emotes the streamers had unless you started guessing them by typing them out.
+                    So this website uses fetch calls to their API's and returns in visual form all the emotes chatters can use in a specefic streamers chat. The one goal I achieved with this website was allowing 
+                    users to go right to a streamers page if they clicked on a url with the streamers name such as "HTTPS://www.emotepickers.com/stanz" and that would take you right to the emotes for stanz. This
+                    was done using react-router's useParams hook which allows you to grab paramaters for the url.
+                </p>
+                <hr align="left">
+            </div>
+       </main>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
